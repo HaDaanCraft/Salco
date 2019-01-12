@@ -35,6 +35,7 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id'=>$id))[0];
             <?php echo $story['story']; ?>
           </div>
         </div>
+        <p class="dank">Met dank aan Jules Smedts voor het mogen gebruiken van de Wattpad verhalen!</p>
       </div>
     </div>
 
