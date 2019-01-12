@@ -78,10 +78,10 @@ a {
 .headerWrapper h1 {
   font-size: 6vw;
   font-weight: bold;
-  color: aqua;
+  color: white;
   text-align: center;
   letter-spacing: 3.33px;
-  text-shadow: 2px 2px #000;
+  text-shadow: 3.5px 3.5px #000;
 }
 
 .sticky {
