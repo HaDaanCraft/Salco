@@ -16,7 +16,7 @@
 
     <div class="klastitularis" id="klastitularis">
       <div class="klastitularisWrapper">
-        <h3><a href="#klastitularis">Tijdlijn</a></h3>
+        <h3><a href="#klastitularis">Klastitularis</a></h3>
       </div>
       <div class="klastitularisGrid">
         <div class="empty"></div>
