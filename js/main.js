@@ -2,8 +2,8 @@ $(document).ready(() => {
 
   // Navigation bar
 
-  $('#header').load('/files/header.html');
-  $('#nav').load('/files/nav.html');
+  $('#header').load('/salco/files/header.html');
+  $('#nav').load('/salco/files/nav.html');
   // $('#navResponsive').load('files/navresponsive.html', function() {
 
 
