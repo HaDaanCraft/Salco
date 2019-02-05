@@ -19,7 +19,7 @@
         <h3 class="animated fadeIn">Games</h3>
         <div class="gamesGrid">
           <div class="game">
-            <img src="./assets/pictures/games/dragon.jpg">
+            <img src="/assets/pictures/games/RonyGame.png">
             <h4 class="gameTitle">Chrome Rony Dragon Game</h4>
             <hr>
             <a href="./games/dragon.php"><div class="button">
