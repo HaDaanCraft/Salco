@@ -1,12 +1,12 @@
 $(document).ready(() => {
 
   // Code
-  let dragon= 
-  dragon.addEventListener(click,spring)
+  let dragon = .assets/pictures/games/RonyGame.png
+  dragon.addEventListener("click",spring)
   spring(){
     
   }
-
-
+  alert("boe")
+  
 
 })
