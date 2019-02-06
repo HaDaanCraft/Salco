@@ -21,7 +21,7 @@
       <div class="klastitularisGrid">
         <div class="empty"></div>
         <p class="name">Rony Roye</p>
-        <img src="./assets/pictures/rony.png">
+        <img src="./assets/pictures/rony.jpg">
         <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/442017900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <div class="textrony">
           <p class="ronytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate neque nulla, non bibendum elit sagittis in. Praesent lorem sem, semper in mauris a, blandit auctor justo. Vestibulum vitae rhoncus ipsum. Vestibulum sit amet metus ut sem lacinia pretium. Donec erat ligula, rutrum quis imperdiet vel, tincidunt sed felis. Phasellus sed suscipit sapien. Cras gravida sagittis urna, sed sollicitudin tortor finibus in. Proin consequat, lectus id vehicula semper, lacus dolor laoreet nibh, accumsan egestas sem lorem ut sem. Curabitur fringilla diam vel condimentum egestas. Praesent rutrum tortor sapien, eleifend pulvinar turpis aliquam vel. Aenean non lobortis leo, ut congue leo. Duis at rutrum ligula. Fusce vehicula fermentum augue. Sed malesuada quam a convallis porttitor. Ut egestas turpis ex, vitae faucibus elit lobortis ac. Curabitur vitae massa vel purus blandit aliquam..</p>
