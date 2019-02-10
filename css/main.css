@@ -276,9 +276,9 @@ a {
 
 .gamesGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 500px;
-  grid-auto-rows: 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 850px;
+  grid-auto-rows: 850px;
   grid-auto-flow: row;
   grid-gap: 5%;
 }
@@ -291,6 +291,7 @@ a {
 .game img {
   margin-top: 100px;
   border-radius: 50%;
+  height: 500px;
 }
 
 .game h4 {
@@ -316,4 +317,16 @@ a {
   color: white;
   font-size: 30px;
   font-weight: bold;
+}
+
+/* Dino Game */
+
+.RonyWrapper canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+
+.RonyWrapper {
+  text-align: center;
+  margin-top: 5px;
 }
