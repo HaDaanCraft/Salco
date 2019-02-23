@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/salco/js/main.js"></script>
+    <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+    <script language="javascript" src="../libraries/p5.dom.js"></script>
   </head>
   <body>
 
@@ -16,7 +18,8 @@
     <div class="RonyWrapper" id="RonyDiv">
     </div>
 
-    <script src="/salco/js/dragon.js"></script>
+    <script src="/salco/js/dragon/game.js"></script>
+    <script src="/salco/js/dragon/dragon.js"></script>
 
     <script>startGame()</script>
 
