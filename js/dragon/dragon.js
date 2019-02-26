@@ -10,20 +10,15 @@ function Dragon() {
   this.x = 10;
   this.y = 540;
 
-  this.show = function() {
-    ctx = myGameArea.context;
-    var image = new Image();
-    image.src = this.imagesrc;
-    ctx.drawImage(image, this.x, this.y, this.width, this.height);
-  }
+  this.show = function(img) {
+    image(img, this.x, this.y, this.width, this.height);
+  };
 
   this.up = function() {
     if (this.y == 540) {
       this.velocity += this.lift;
-      ctx.destroy()
-      console.log("clear");
     }
-  }
+  };
 
   this.update = function() {
     this.velocity += this.gravity;
@@ -36,6 +31,6 @@ function Dragon() {
       this.velocity = 0;
     }
 
-  }
+  };
 
 }

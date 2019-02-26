@@ -21,7 +21,7 @@
     <script src="/salco/js/dragon/game.js"></script>
     <script src="/salco/js/dragon/dragon.js"></script>
 
-    <script>startGame()</script>
+    <!-- <script>startGame()</script> -->
 
   </body>
 </html>

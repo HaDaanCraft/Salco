@@ -1,22 +1,17 @@
 var dragon;
-function startGame() {
-  dragon = new Dragon();
-  myGameArea.start();
-}
 
-var myGameArea = {
-canvas : document.createElement("canvas"),
-start : function() {
-  this.canvas.width = 1700;
-  this.canvas.height = 750;
-  this.context = this.canvas.getContext("2d");
-  // document.body.insertBefore(this.canvas, document.body.childNodes[3]);
-  document.getElementById("RonyDiv").appendChild(this.canvas);
-  }
+function setup() {
+  var cnv = createCanvas(1700, 750);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2 + 80 ;
+  cnv.position(x, y);
+  dragon = new Dragon();
+  img = loadImage("/salco/assets/pictures/games/RonyGame.png");
 }
 
 function draw() {
-  dragon.show();
+  background('gray');
+  dragon.show(img);
   dragon.update();
 }
 
