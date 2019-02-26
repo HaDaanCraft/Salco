@@ -1,7 +1,7 @@
 function Dragon() {
 
-  this.gravity = 0.6;
-  this.lift = -15;
+  this.gravity = 0.25;
+  this.lift = -30;
   this.velocity = 0;
 
   this.width = 300;
