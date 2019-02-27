@@ -19,13 +19,14 @@ function setup() {
   score = new Score();
   dragonImg = loadImage("/salco/assets/pictures/games/RonyGame.png");
   toetsImg = loadImage("/salco/assets/pictures/games/cactus.jpg");
+  bgImage = loadImage("/salco/assets/pictures/games/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
   backgroundMusic.play();
 }
 
 function draw() {
-  background('gray');
+  background(bgImage);
 
   for (var i = toetsen.length-1; i >= 0; i--) {
     toetsen[i].show(toetsImg);
@@ -37,6 +38,8 @@ function draw() {
       score.show(10);
       GameOver.setVolume(1);
       GameOver.play();
+      hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
+      hypeGif.position(width/2-125, height-150);
       $('.replaybutton').css({'display': 'block'});
       throw new Error('This is not an error. This is just to abort javascript');
     }
@@ -63,7 +66,7 @@ function gameOver(x) {
   // and the vertical position
   textSize(100);
   textAlign(CENTER);
-  fill(0);
+  fill(135, 116, 191);
   text('Game Over!', x, height/2);
 }
 

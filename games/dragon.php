@@ -1,5 +1,6 @@
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Salco - 4B</title>
     <link rel="icon" href="/salco/assets/pictures/salcosecond.ico">
@@ -11,8 +12,10 @@
     <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
     <script language="javascript" src="../libraries/p5.dom.js"></script>
     <script language="javascript" src="../libraries/p5.sound.js"></script>
-  </head>
-  <body>
+    <script language="javascript" src="../libraries/p5.gif.js"></script>
+</head>
+
+<body>
 
     <div class="nav" id="nav"></div>
 
@@ -22,5 +25,6 @@
     <script src="/salco/js/dragon/score.js"></script>
     <button type="button" onclick="location.reload()" class="replaybutton">Play Again</button>
 
-  </body>
-</html>
+</body>
+
+</html> 
