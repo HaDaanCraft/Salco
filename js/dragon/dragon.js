@@ -24,7 +24,6 @@ function Dragon() {
     this.velocity += this.gravity;
     this.velocity += 0.9;
     this.y += this.velocity;
-    // console.log(this.y);
 
     if (this.y > 540) {
       this.y = 540;

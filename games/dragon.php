@@ -22,6 +22,7 @@
     <script src="/salco/js/dragon/game.js"></script>
     <script src="/salco/js/dragon/dragon.js"></script>
     <script src="/salco/js/dragon/toets.js"></script>
+    <script src="/salco/js/dragon/bier.js"></script>
     <script src="/salco/js/dragon/score.js"></script>
     <button type="button" onclick="location.reload()" class="replaybutton">Play Again</button>
 
