@@ -36,7 +36,7 @@ function draw() {
       backgroundMusic.stop();
       gameOver(width * 0.5);
       score.show(10);
-      GameOver.setVolume(1);
+      GameOver.setVolume(0.5);
       GameOver.play();
       hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
       hypeGif.position(width/2-125, height-150);
