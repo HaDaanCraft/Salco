@@ -36,15 +36,7 @@ function draw() {
     toetsen[i].update();
 
     if (toetsen[i].hits(dragon)) {
-      backgroundMusic.stop();
-      gameOver(width * 0.5);
-      score.show(10);
-      GameOver.setVolume(0.01);
-      GameOver.play();
-      hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
-      hypeGif.position(width/2-125, height-150);
-      $('.replaybutton').css({'display': 'block'});
-      throw new Error('This is not an error. This is just to abort javascript');
+      gameOverFunction();
     }
 
     if (toetsen[i].offscreen()) {
@@ -56,19 +48,9 @@ function draw() {
     bieren[i].show(bierImg);
     bieren[i].update();
 
-    // if (toetsen[i].hits(dragon)) {
-    //   backgroundMusic.stop();
-    //   gameOver(width * 0.5);
-    //   score.show(10);
-    //   GameOver.setVolume(0.5);
-    //   GameOver.play();
-    //   hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
-    //   hypeGif.position(width / 2 - 125, height - 150);
-    //   $('.replaybutton').css({
-    //     'display': 'block'
-    //   });
-    //   throw new Error('This is not an error. This is just to abort javascript');
-    // }
+    if (bieren[i].hits(dragon)) {
+      console.log("hit");
+    }
 
     if (bieren[i].offscreen()) {
       bieren.splice(i, 1);
@@ -82,12 +64,33 @@ function draw() {
   score.update();
 
   if (frameCount % 90 == 0) {
-    toetsen.push(new Toets());
+    testorbeer();
   }
+}
 
-  if (frameCount % 90 == 0) {
+function testorbeer() {
+  var choose = Math.round(Math.random());
+
+  if (choose === 0) {
+    toetsen.push(new Toets());
+  }  else if (choose === 1) {
     bieren.push(new Bier());
   }
+
+}
+
+function gameOverFunction() {
+  backgroundMusic.stop();
+  gameOver(width * 0.5);
+  score.show(10);
+  GameOver.setVolume(0.1);
+  GameOver.play();
+  hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
+  hypeGif.position(width / 2 - 125, height - 150);
+  $('.replaybutton').css({
+    'display': 'block'
+  });
+  throw new Error('This is not an error. This is just to abort javascript');
 }
 
 function gameOver(x) {

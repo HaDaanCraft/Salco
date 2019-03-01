@@ -8,18 +8,19 @@ function Bier() {
     this.y = yvars[Math.round(Math.random())];
     this.speed = 10;
 
-    // this.hits = function (dragon) {
-    //     if (dragon.y > 540 - this.height) {
-    //         if (dragon.x > this.x && dragon.x < this.x + this.width) {
-    //             return true;
-    //         }
-    //     }
-    //     return false;
-    // };
+    this.hits = function (dragon) {
+        // if (dragon.y > this.y && dragon.y < this.y+this.height) {
+            // if (dragon.x > this.x && dragon.x < this.x + this.width) {
+                // return true;
+            // }
+        // }
+        console.log(dragon.y);
+        console.log(this.y)
+        // return false;
+    };
 
     this.show = function (img) {
         image(img, this.x, this.y, this.width, this.height);
-        console.log(this.y);
     };
 
     this.update = function () {
