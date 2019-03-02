@@ -90,7 +90,7 @@ function gameOverFunction() {
   $('.replaybutton').css({
     'display': 'block'
   });
-  throw new Error('This is not an error. This is just to abort javascript');
+  noLoop();
 }
 
 function gameOver(x) {
