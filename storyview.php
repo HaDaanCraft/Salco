@@ -2,14 +2,15 @@
 include('private/DB.php');
 
 $id = $_GET['id'];
-$story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id'=>$id))[0];
+$story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0];
 
 ?>
 
 
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Salco - 4B</title>
     <link rel="icon" href="./assets/pictures/salcosecond.ico">
@@ -17,27 +18,32 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id'=>$id))[0];
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div class="nav" id="nav"></div>
 
     <div class="storys">
-      <div class="storysWrapper">
-        <a href="storys.php"><img src="./assets/pictures/back.png" alt="Terug" id="back"></a>
-        <h3 id="viewName"><?php echo $story['Voornaam']." ".$story['Achternaam'];?></h3>
-        <div class="storyGrid">
-          <div class="photo">
-            <img src="<?php echo $story['img']; ?>" />
-          </div>
-          <div class="text">
-            <?php echo $story['story']; ?>
-          </div>
+        <div class="storysWrapper">
+            <a href="storys.php"><img src="./assets/pictures/back.png" alt="Terug" id="back"></a>
+            <h3 id="viewName">
+                <?php echo $story['Voornaam'] . " " . $story['Achternaam']; ?>
+            </h3>
+            <div class="storyGrid">
+                <div class="photo">
+                    <img src="<?php echo $story['img']; ?>" />
+                </div>
+                <div class="text">
+                    <?php echo $story['story']; ?>
+                </div>
+            </div>
+            <p class="dank">Met dank aan Jules Smedts, Margot Vanderhulst en Kato Verdoodt voor het mogen gebruiken van de Wattpad verhalen!</p>
         </div>
-        <p class="dank">Met dank aan Jules Smedts, Margot Vanderhulst en Kato Verdoodt voor het mogen gebruiken van de Wattpad verhalen!</p>
-      </div>
     </div>
 
-  </body>
-</html>
+</body>
+
+</html> 

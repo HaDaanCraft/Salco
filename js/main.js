@@ -6,6 +6,19 @@ $(document).ready(() => {
   $('#nav').load('/salco/files/nav.html');
   // $('#navResponsive').load('files/navresponsive.html', function() {
 
+    // LoggedIn Checking
+
+    var loggedCookie = Cookies.get('loggedInUserType');
+    if (loggedCookie == null && $(location).attr('pathname') == '/salco/games/flappybird.html') {
+      var pin = prompt("WIP: Pin?");
+      if (pin == "8973") {
+        Cookies.set('loggedInUserType', '1', { expires: 1 });
+      } else {
+        alert("Wrong Code!");
+        $(location).attr("href", "/salco/games.html");
+      }
+    }
+
 
     // Animations
 

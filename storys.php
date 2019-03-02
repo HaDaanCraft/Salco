@@ -8,7 +8,8 @@ $profiles = DB::query('SELECT * FROM profiles');
 
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Salco - 4B</title>
     <link rel="icon" href="./assets/pictures/salcosecond.ico">
@@ -16,28 +17,31 @@ $profiles = DB::query('SELECT * FROM profiles');
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div class="nav" id="nav"></div>
 
     <div class="storys">
-      <div class="storysWrapper">
-        <h3 class="animated fadeIn">Story's</h3>
-        <div class="storysGrid">
-          <?php
-          foreach ($profiles as $profile) {
-            echo '<div class="profile"><a href="storyview.php?id='.$profile['id'].'">';
-              echo '<div class="photo"><img src="'.$profile['img'].'" /></div>';
-              echo '<p class="voornaam">'.$profile['Voornaam'].'</p>';
-              echo '<p class="achternaam">'.$profile['Achternaam'].'</p>';
-            echo '</a></div>';
-          }
-          ?>
+        <div class="storysWrapper">
+            <h3 class="animated fadeIn">Story's</h3>
+            <div class="storysGrid">
+                <?php
+                foreach ($profiles as $profile) {
+                  echo '<div class="profile"><a href="storyview.php?id=' . $profile['id'] . '">';
+                  echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
+                  echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
+                  echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
+                  echo '</a></div>';
+                }
+                ?>
+            </div>
         </div>
-      </div>
     </div>
 
-  </body>
-</html>
+</body>
+
+</html> 
