@@ -7,7 +7,7 @@ function Toets() {
 
     this.hits = function(dragon) {
         if (dragon.y+204.5 > this.y) {
-            if (dragon.x+220 > this.x && dragon.x+52 < this.x+134) {
+            if (dragon.x+200 > this.x && dragon.x+52 < this.x+134) {
                 return true;
             }
         }
