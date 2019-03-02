@@ -25,7 +25,7 @@ function setup() {
   bgImage = loadImage("/salco/assets/pictures/games/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
-  // backgroundMusic.play();
+  backgroundMusic.play();
 }
 
 function draw() {
