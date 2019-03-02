@@ -19,7 +19,7 @@ function setup() {
   toetsen.push(new Toets());
   score = new Score();
   dragonImg = loadImage("/salco/assets/pictures/games/RonyGame.png");
-  dragonImgDown = loadImage("/salco/assets/pictures/games/bird.png");
+  dragonImgDown = loadImage("/salco/assets/pictures/games/RonyGameDown.png");
   toetsImg = loadImage("/salco/assets/pictures/games/cactus.jpg");
   bierImg = loadImage("/salco/assets/pictures/games/bird.png");
   bgImage = loadImage("/salco/assets/pictures/games/background.jpg");

@@ -9,9 +9,17 @@ function Bier() {
     this.speed = 10;
 
     this.hits = function (dragon) {
-        if (dragon.y+197.5 > this.y+0.5 && dragon.y+43.5 < this.y+112.5) {
-            if (dragon.x+220 > this.x+62 && dragon.x+51 < this.x+145) {
-                return true;
+        if (dragon.faced == false) {
+            if (dragon.y+197.5 > this.y+0.5 && dragon.y+43.5 < this.y+112.5) {
+                if (dragon.x+220 > this.x+62 && dragon.x+51 < this.x+145) {
+                    return true;
+                }
+            }
+        } else if (dragon.faced == true) {
+            if (dragon.y + 197.5 > this.y + 0.5 && dragon.y + 43.5 < this.y + 112.5) {
+                if (dragon.x + 220 > this.x + 62 && dragon.x + 51 < this.x + 145) {
+                    return true;
+                }
             }
         }
         return false;
