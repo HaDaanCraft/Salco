@@ -6,8 +6,8 @@ var score;
 function preload() {
   font = loadFont('../assets/fonts/Coiny-Regular.ttf');
   soundFormats('mp3');
-  backgroundMusic = loadSound('../assets/sounds/games/PaardVanTroje.mp3');
-  GameOver = loadSound('../assets/sounds/games/GameOver.mp3');
+  backgroundMusic = loadSound('../assets/sounds/games/Dragon/PaardVanTroje.mp3');
+  GameOver = loadSound('../assets/sounds/games/Dragon/GameOver.mp3');
 }
 
 function setup() {
@@ -18,11 +18,11 @@ function setup() {
   dragon = new Dragon();
   toetsen.push(new Toets());
   score = new Score();
-  dragonImg = loadImage("/salco/assets/pictures/games/RonyGame.png");
-  dragonImgDown = loadImage("/salco/assets/pictures/games/RonyGameDown.png");
-  toetsImg = loadImage("/salco/assets/pictures/games/cactus.jpg");
-  bierImg = loadImage("/salco/assets/pictures/games/bird.png");
-  bgImage = loadImage("/salco/assets/pictures/games/background.jpg");
+  dragonImg = loadImage("/salco/assets/pictures/games/Dragon/RonyGame.png");
+  dragonImgDown = loadImage("/salco/assets/pictures/games/Dragon/RonyGameDown.png");
+  toetsImg = loadImage("/salco/assets/pictures/games/Dragon/cactus.jpg");
+  bierImg = loadImage("/salco/assets/pictures/games/Dragon/bird.png");
+  bgImage = loadImage("/salco/assets/pictures/games/Dragon/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
   backgroundMusic.play();
@@ -85,7 +85,7 @@ function gameOverFunction() {
   score.show(10);
   GameOver.setVolume(0.1);
   GameOver.play();
-  hypeGif = createImg("/salco/assets/pictures/games/hype.gif");
+  hypeGif = createImg("/salco/assets/pictures/games/Dragon/hype.gif");
   hypeGif.position(width / 2 - 125, height - 150);
   $('.replaybutton').css({
     'display': 'block'
