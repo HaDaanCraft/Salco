@@ -1,13 +1,13 @@
 function Toets() {
     this.width = 135;
     this.height = 141;
-    this.x = width;
+    this.x = width-200;
     this.y = height-this.height;
     this.speed = 10;
 
     this.hits = function(dragon) {
-        if (dragon.y > 540-this.height) {
-            if (dragon.x > this.x && dragon.x < this.x + this.width) {
+        if (dragon.y+204.5 > this.y) {
+            if (dragon.x+200 > this.x && dragon.x+52 < this.x+134) {
                 return true;
             }
         }

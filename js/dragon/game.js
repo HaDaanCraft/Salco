@@ -25,7 +25,7 @@ function setup() {
   bgImage = loadImage("/salco/assets/pictures/games/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
-  backgroundMusic.play();
+  // backgroundMusic.play();
 }
 
 function draw() {
@@ -36,7 +36,8 @@ function draw() {
     toetsen[i].update();
 
     if (toetsen[i].hits(dragon)) {
-      gameOverFunction();
+      // gameOverFunction();
+      console.log("HIT");
     }
 
     if (toetsen[i].offscreen()) {
@@ -49,7 +50,7 @@ function draw() {
     bieren[i].update();
 
     if (bieren[i].hits(dragon)) {
-      gameOverFunction();
+      // gameOverFunction();
     }
 
     if (bieren[i].offscreen()) {
@@ -61,10 +62,11 @@ function draw() {
   dragon.update();
 
   score.show(10);
-  score.update();
+  // score.update();
 
   if (frameCount % 90 == 0) {
-    testorbeer();
+    // testorbeer();
+    toetsen.push(new Toets());
   }
 }
 
