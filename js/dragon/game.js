@@ -17,15 +17,15 @@ function setup() {
   cnv.position(x, y);
   dragon = new Dragon();
   toetsen.push(new Toets());
-  bieren.push(new Bier());
   score = new Score();
   dragonImg = loadImage("/salco/assets/pictures/games/RonyGame.png");
+  dragonImgDown = loadImage("/salco/assets/pictures/games/bird.png");
   toetsImg = loadImage("/salco/assets/pictures/games/cactus.jpg");
   bierImg = loadImage("/salco/assets/pictures/games/bird.png");
   bgImage = loadImage("/salco/assets/pictures/games/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
-  backgroundMusic.play();
+  // backgroundMusic.play();
 }
 
 function draw() {
@@ -33,7 +33,7 @@ function draw() {
 
   for (var i = toetsen.length-1; i >= 0; i--) {
     toetsen[i].show(toetsImg);
-    toetsen[i].update();
+    // toetsen[i].update();
 
     if (toetsen[i].hits(dragon)) {
       gameOverFunction();
@@ -46,10 +46,10 @@ function draw() {
 
   for (var i = bieren.length - 1; i >= 0; i--) {
     bieren[i].show(bierImg);
-    bieren[i].update();
+    // bieren[i].update();
 
     if (bieren[i].hits(dragon)) {
-      console.log("hit");
+      // gameOverFunction();
     }
 
     if (bieren[i].offscreen()) {
@@ -57,14 +57,14 @@ function draw() {
     }
   }
 
-  dragon.show(dragonImg);
+  dragon.show(dragonImg, dragonImgDown);
   dragon.update();
 
   score.show(10);
-  score.update();
+  // score.update();
 
   if (frameCount % 90 == 0) {
-    testorbeer();
+    // testorbeer();
   }
 }
 
@@ -106,6 +106,14 @@ function gameOver(x) {
 function keyPressed() {
   if (keyCode == UP_ARROW) {
     dragon.up();
-    // console.log("UP");
+  }
+  if (keyCode == DOWN_ARROW) {
+    dragon.down();
+  }
+}
+
+function keyReleased() {
+  if (keyCode == DOWN_ARROW) {
+    dragon.normal();
   }
 }

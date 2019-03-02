@@ -3,20 +3,18 @@ function Bier() {
     this.height = 125;
     this.x = width+400;
 
-    var yvars = [height-220, height-141];
+    var yvars = [height-270, height-141];
 
     this.y = yvars[Math.round(Math.random())];
     this.speed = 10;
 
     this.hits = function (dragon) {
-        // if (dragon.y > this.y && dragon.y < this.y+this.height) {
-            // if (dragon.x > this.x && dragon.x < this.x + this.width) {
-                // return true;
-            // }
-        // }
-        console.log(dragon.y);
-        console.log(this.y)
-        // return false;
+        if (dragon.y+197.5 > this.y+0.5 && dragon.y+43.5 < this.y+112.5) {
+            if (dragon.x+220 > this.x+62 && dragon.x+51 < this.x+145) {
+                return true;
+            }
+        }
+        return false;
     };
 
     this.show = function (img) {
