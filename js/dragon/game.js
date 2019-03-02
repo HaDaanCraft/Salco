@@ -33,7 +33,7 @@ function draw() {
 
   for (var i = toetsen.length-1; i >= 0; i--) {
     toetsen[i].show(toetsImg);
-    // toetsen[i].update();
+    toetsen[i].update();
 
     if (toetsen[i].hits(dragon)) {
       gameOverFunction();
@@ -46,10 +46,10 @@ function draw() {
 
   for (var i = bieren.length - 1; i >= 0; i--) {
     bieren[i].show(bierImg);
-    // bieren[i].update();
+    bieren[i].update();
 
     if (bieren[i].hits(dragon)) {
-      // gameOverFunction();
+      gameOverFunction();
     }
 
     if (bieren[i].offscreen()) {
@@ -61,10 +61,10 @@ function draw() {
   dragon.update();
 
   score.show(10);
-  // score.update();
+  score.update();
 
   if (frameCount % 90 == 0) {
-    // testorbeer();
+    testorbeer();
   }
 }
 

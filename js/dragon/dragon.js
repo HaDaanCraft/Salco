@@ -18,7 +18,6 @@ function Dragon() {
     } else if (this.faced == 1){
       image(imgDown, this.x, this.y, this.width, this.height);
     }
-    console.log(this.faced);
   };
 
   this.up = function() {
