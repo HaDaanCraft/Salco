@@ -278,6 +278,10 @@ a {
     font-weight: bold;
   }
 
+  .noGames {
+    display: none;
+  }
+
   .gamesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -511,7 +515,7 @@ a {
 
   .storysGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-rows: auto;
     grid-auto-rows: auto;
@@ -590,8 +594,676 @@ a {
     font-weight: bold;
   }
 
+  .noGames {
+    width: 60vw;
+  }
+
+  .noGamesText {
+    font-size: 50px;
+    color: rgb(43, 42, 42);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: auto;
+  }
+
   .gamesGrid {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 850px;
+    grid-auto-rows: 850px;
+    grid-auto-flow: row;
+    grid-gap: 5%;
+  }
+
+  .game {
+    background-image: linear-gradient(to bottom right, #0080ff, #00ffff);
+    text-align: center;
+  }
+
+  .game img {
+    margin-top: 100px;
+    border-radius: 50%;
+    height: 500px;
+  }
+
+  .game h4 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #3f222a;
+  }
+
+  .game hr {
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+
+  .game .button {
+    background-image: linear-gradient(to bottom right, #FF0000, #FFD700);
+    margin: auto;
+    width: 70%;
+    height: 70px;
+    margin-top: 25px;
+  }
+
+  .game .button p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* Dragon Game */
+
+  .replaybutton {
+    display: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+  }
+}
+
+/* Small iPads */
+@media screen and (min-width: 761px) and (max-width: 899px) {
+
+  /* Header */
+
+  .header {
+    background-image: url(../assets/pictures/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+  }
+
+  #nav {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+  }
+
+  .nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navWrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navWrapper img {
+    height: 150px;
+    padding-top: 10px;
+  }
+
+  .right {
+    padding-top: 75px;
+    float: right;
+  }
+
+  #homepage,
+  #storys,
+  #games {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  .headerWrapper {
+    padding-top: 235px;
+  }
+
+  .headerWrapper h1 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 3.33px;
+    text-shadow: 3.5px 3.5px #000;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    opacity: 0.95;
+    z-index: 1;
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+  }
+
+  .storyss {
+    margin-top: 150px;
+  }
+
+  .gamess {
+    margin-top: 150px;
+  }
+
+  /* Klastitularis */
+
+  .klastitularis {
+    width: 100%;
+  }
+
+  .klastitularisWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .klastitularisWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .klastitularisGrid {
     display: grid;
+    grid-template-rows: 25px 2fr 1fr;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    grid-template-areas:
+      'empty rony'
+      'photo text'
+      'music text';
+    grid-gap: 5%;
+  }
+
+  .klastitularisGrid .empty {
+    grid-area: empty;
+  }
+
+  .klastitularisGrid .name {
+    font-size: 25px;
+    color: #4A4A4A;
+    grid-area: rony;
+  }
+
+  .klastitularisGrid img {
+    grid-area: photo;
+    width: 100%;
+    margin: auto;
+  }
+
+  .klastitularisGrid iframe {
+    grid-area: music;
+  }
+
+  .klastitularisGrid .textrony {
+    grid-area: text;
+  }
+
+  .klastitularisGrid .textrony p {
+    font-size: 15px;
+  }
+
+  /* Storys */
+
+  .storys {
+    width: 100%
+  }
+
+  .storysWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  .storysWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: inline;
+  }
+
+  .storysWrapper #viewName {
+    font-size: 30px;
+  }
+
+  .storysWrapper #back {
+    height: 50px;
+  }
+
+  .storysWrapper a {
+    height: 50px;
+    margin-right: 50px;
+  }
+
+  .storysGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-row-gap: 15%;
+  }
+
+  /* .profile {
+  background-image: linear-gradient(to bottom right, #0080ff, #00ffff);
+} */
+
+  .profile .photo {
+    text-align: center;
+  }
+
+  .profile .photo img {
+    height: 125px;
+    margin: auto;
+  }
+
+  .profile .voornaam {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #779699;
+  }
+
+  .profile .achternaam {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #779699;
+  }
+
+  .storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+      'photo none'
+      'text text';
+  }
+
+  .storyGrid .photo {
+    grid-area: photo;
+    float: left;
+  }
+
+  .storyGrid .text {
+    grid-area: text;
+    font-size: 25px;
+  }
+
+  .storysWrapper .dank {
+    margin-top: 100px;
+    ;
+  }
+
+  /* Games */
+
+  .games {
+    width: 100%;
+  }
+
+  .gamesWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .gamesWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .noGames {
+    width: 60vw;
+  }
+
+  .noGamesText {
+    font-size: 90px;
+    color: rgb(43, 42, 42);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  .gamesGrid {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 850px;
+    grid-auto-rows: 850px;
+    grid-auto-flow: row;
+    grid-gap: 5%;
+  }
+
+  .game {
+    background-image: linear-gradient(to bottom right, #0080ff, #00ffff);
+    text-align: center;
+  }
+
+  .game img {
+    margin-top: 100px;
+    border-radius: 50%;
+    height: 500px;
+  }
+
+  .game h4 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #3f222a;
+  }
+
+  .game hr {
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+
+  .game .button {
+    background-image: linear-gradient(to bottom right, #FF0000, #FFD700);
+    margin: auto;
+    width: 70%;
+    height: 70px;
+    margin-top: 25px;
+  }
+
+  .game .button p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* Dragon Game */
+
+  .replaybutton {
+    display: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+  }
+}
+
+/* iPhone Portrait */
+@media screen and (min-width: 300px) and (max-width: 760px) and (orientation: portrait) {
+
+  /* Header */
+
+  .header {
+    background-image: url(../assets/pictures/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+  }
+
+  #nav {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+  }
+
+  .nav {
+    width: 100%;
+    height: 100px;
+  }
+
+  .navWrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+  .navWrapper img {
+    height: 150px;
+    padding-top: 10px;
+  }
+
+  .right {
+    padding-top: 75px;
+    float: right;
+  }
+
+  #homepage,
+  #storys,
+  #games {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  .headerWrapper {
+    padding-top: 235px;
+  }
+
+  .headerWrapper h1 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 3.33px;
+    text-shadow: 3.5px 3.5px #000;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    opacity: 0.95;
+    z-index: 1;
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+  }
+
+  .storyss {
+    margin-top: 150px;
+  }
+
+  .gamess {
+    margin-top: 150px;
+  }
+
+  /* Klastitularis */
+
+  .klastitularis {
+    width: 100%;
+  }
+
+  .klastitularisWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .klastitularisWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .klastitularisGrid {
+    display: grid;
+    grid-template-rows: 25px 2fr 1fr;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    grid-template-areas:
+      'empty rony'
+      'photo text'
+      'music text';
+    grid-gap: 5%;
+  }
+
+  .klastitularisGrid .empty {
+    grid-area: empty;
+  }
+
+  .klastitularisGrid .name {
+    font-size: 25px;
+    color: #4A4A4A;
+    grid-area: rony;
+  }
+
+  .klastitularisGrid img {
+    grid-area: photo;
+    width: 100%;
+    margin: auto;
+  }
+
+  .klastitularisGrid iframe {
+    grid-area: music;
+  }
+
+  .klastitularisGrid .textrony {
+    grid-area: text;
+  }
+
+  .klastitularisGrid .textrony p {
+    font-size: 15px;
+  }
+
+  /* Storys */
+
+  .storys {
+    width: 100%
+  }
+
+  .storysWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  .storysWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: inline;
+  }
+
+  .storysWrapper #viewName {
+    font-size: 30px;
+  }
+
+  .storysWrapper #back {
+    height: 50px;
+  }
+
+  .storysWrapper a {
+    height: 50px;
+    margin-right: 50px;
+  }
+
+  .storysGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-row-gap: 15%;
+  }
+
+  /* .profile {
+  background-image: linear-gradient(to bottom right, #0080ff, #00ffff);
+} */
+
+  .profile .photo {
+    text-align: center;
+  }
+
+  .profile .photo img {
+    height: 125px;
+    margin: auto;
+  }
+
+  .profile .voornaam {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #779699;
+  }
+
+  .profile .achternaam {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #779699;
+  }
+
+  .storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+      'photo none'
+      'text text';
+  }
+
+  .storyGrid .photo {
+    grid-area: photo;
+    float: left;
+  }
+
+  .storyGrid .text {
+    grid-area: text;
+    font-size: 25px;
+  }
+
+  .storysWrapper .dank {
+    margin-top: 100px;
+    ;
+  }
+
+  /* Games */
+
+  .games {
+    width: 100%;
+  }
+
+  .gamesWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .gamesWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .noGames {
+    width: 60vw;
+  }
+
+  .noGamesText {
+    font-size: 90px;
+    color: rgb(43, 42, 42);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  .gamesGrid {
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 850px;
     grid-auto-rows: 850px;
