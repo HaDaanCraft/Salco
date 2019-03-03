@@ -23,6 +23,9 @@ $profiles = DB::query('SELECT * FROM profiles');
 
 <body>
 
+    <div class="navResponsive" id="navResponsive">
+    </div>
+
     <div class="nav" id="nav"></div>
 
     <div class="storys">
@@ -31,11 +34,11 @@ $profiles = DB::query('SELECT * FROM profiles');
             <div class="storysGrid">
                 <?php
                 foreach ($profiles as $profile) {
-                  echo '<div class="profile"><a href="storyview.php?id=' . $profile['id'] . '">';
-                  echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
-                  echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
-                  echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
-                  echo '</a></div>';
+                    echo '<div class="profile"><a href="storyview.php?id=' . $profile['id'] . '">';
+                    echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
+                    echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
+                    echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
+                    echo '</a></div>';
                 }
                 ?>
             </div>
@@ -44,4 +47,4 @@ $profiles = DB::query('SELECT * FROM profiles');
 
 </body>
 
-</html> 
+</html>

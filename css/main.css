@@ -91,6 +91,10 @@ a {
     text-shadow: 3.5px 3.5px #000;
   }
 
+  .navResponsive {
+    display: none;
+  }
+
   .sticky {
     position: fixed;
     top: 0;
@@ -411,6 +415,10 @@ a {
     text-shadow: 3.5px 3.5px #000;
   }
 
+  .navResponsive {
+    display: none;
+  }
+
   .sticky {
     position: fixed;
     top: 0;
@@ -712,6 +720,10 @@ a {
     float: right;
   }
 
+  .right .menu {
+    display: none;
+  }
+
   #homepage,
   #storys,
   #games {
@@ -733,6 +745,10 @@ a {
     text-align: center;
     letter-spacing: 3.33px;
     text-shadow: 3.5px 3.5px #000;
+  }
+
+  .navResponsive {
+    display: none;
   }
 
   .sticky {
@@ -998,7 +1014,7 @@ a {
   }
 }
 
-/* iPhone Portrait */
+/* Phone Portrait */
 @media screen and (min-width: 300px) and (max-width: 760px) and (orientation: portrait) {
 
   /* Header */
@@ -1040,14 +1056,20 @@ a {
     float: right;
   }
 
-  #homepage,
-  #storys,
-  #games {
+  .right #homepage,
+  .right #storys,
+  .right #games {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
     margin-right: 35px;
     letter-spacing: 0.6px;
+    display: none;
+  }
+
+  .right .menu {
+    display: block;
+    height: 25px;
   }
 
   .headerWrapper {
@@ -1062,6 +1084,50 @@ a {
     letter-spacing: 3.33px;
     text-shadow: 3.5px 3.5px #000;
   }
+
+  /* Responsive Nav */
+
+  .open {
+    display: block;
+  }
+
+  .close {
+    float: right;
+    margin: 1em 1em 0 0;
+  }
+
+  .closeIcon {
+    height: 20px;
+  }
+
+  .navResponsive {
+    width: 0;
+    overflow-y: hidden;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .navResponsive a {
+    clear: right;
+    color: #4A4A4A;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    padding: 1em 0;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .navResponsive a:not(:first-child):hover {
+    color: #B2B2B2;
+  }
+
+  /* Sticky nav bar */
 
   .sticky {
     position: fixed;

@@ -24,6 +24,9 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0
 
 <body>
 
+    <div class="navResponsive" id="navResponsive">
+    </div>
+
     <div class="nav" id="nav"></div>
 
     <div class="storys">
@@ -40,10 +43,11 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0
                     <?php echo $story['story']; ?>
                 </div>
             </div>
-            <p class="dank">Met dank aan Jules Smedts, Margot Vanderhulst en Kato Verdoodt voor het mogen gebruiken van de Wattpad verhalen!</p>
+            <p class="dank">Met dank aan Jules Smedts, Margot Vanderhulst en Kato Verdoodt voor het mogen gebruiken van
+                de Wattpad verhalen!</p>
         </div>
     </div>
 
 </body>
 
-</html> 
+</html>
