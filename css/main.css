@@ -1247,7 +1247,6 @@ a {
     grid-template-rows: auto;
     grid-auto-rows: auto;
     justify-content: center;
-    grid-row-gap: 15%;
   }
 
   /* .profile {
@@ -1293,12 +1292,12 @@ a {
 
   .storyGrid .text {
     grid-area: text;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .storysWrapper .dank {
     margin-top: 100px;
-    ;
+    font-size: 13px;
   }
 
   /* Games */
