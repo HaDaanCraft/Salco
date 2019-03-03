@@ -64,6 +64,10 @@ a {
     float: right;
   }
 
+  .right .menu {
+    display: none;
+  }
+
   #homepage,
   #storys,
   #games {
@@ -378,6 +382,10 @@ a {
   .right {
     padding-top: 75px;
     float: right;
+  }
+
+  .right .menu {
+    display: none;
   }
 
   #homepage,
