@@ -1,30 +1,32 @@
-function Score() {
-    this.score = 0;
-    this.highScore = 0;
+class Score {
+    constructor() {
+        this.score = 0;
+        this.highScore = 0;
+    }
 
-    this.show = function (x) {
+    show(x) {
         textSize(40);
         textAlign(LEFT);
         fill(255);
         text("Score: " + Math.round(this.score), x, 50);
         text("High Score: " + Math.round(this.highScore), x, 100);
     }
-    this.update = function () {
+
+    update() {
         this.score += 0.25;
 
         if (typeof (Storage) !== "undefined") {
-            if (localStorage.getItem("highscoredragon")) {
-                this.highScore = localStorage.getItem("highscoredragon");
+            if(localStorage.getItem("highscoreflappy")) {
+                this.highScore = localStorage.getItem("highscoreflappy");
                 if (this.highScore < this.score) {
                     this.highScore = this.score;
-                    localStorage.setItem("highscoredragon", this.highScore);
+                    localStorage.setItem("highscoreflappy", this.highScore)
                 }
             } else {
-                localStorage.setItem("highscoredragon", this.score);
+                localStorage.setItem("highscoreflappy", this.score);
             }
         } else {
             alert("Your browser does not support localstorage!");
         }
     }
-
 }
