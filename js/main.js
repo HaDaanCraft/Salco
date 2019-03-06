@@ -9,7 +9,7 @@ $(document).ready(() => {
   // LoggedIn Checking
 
   var loggedCookie = Cookies.get('loggedInUserType');
-  if (loggedCookie == null && $(location).attr('pathname') == '/salco/games/flappybird.html') {
+  if (loggedCookie == null && $(location).attr('pathname') == '/salco/games/snake.html') {
     var pin = prompt("WIP: Pin?");
     if (pin == "8973") {
       Cookies.set('loggedInUserType', '1', {

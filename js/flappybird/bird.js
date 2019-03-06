@@ -11,9 +11,7 @@ class Bird {
     }
 
     show(img) {
-        // image(img, this.x, this.y, this.width, this.height);
-        fill(255);
-        ellipse(this.x, this.y, 32, 32);
+        image(img, this.x, this.y, this.width, this.height);
     }
 
     up() {
@@ -25,13 +23,13 @@ class Bird {
         this.velocity *= 0.9;
         this.y += this.velocity;
 
-        if (this.y > height) {
-            this.y = height;
+        if (this.y > height-145) {
+            this.y = height-145;
             this.velocity = 0;
         }
 
-        if (this.y < 0) {
-            this.y = 0;
+        if (this.y < -75) {
+            this.y = -75;
             this.velocity = 0;
         }
 

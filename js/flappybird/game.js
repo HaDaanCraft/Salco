@@ -20,7 +20,7 @@ function draw() {
     bird.update();
 
     score.show(10);
-    score.update();
+    // score.update();
 
     for (var i = pipes.length-1; i >= 0; i--) {
         pipes[i].show();
@@ -32,11 +32,11 @@ function draw() {
 
         if (pipes[i].hit(bird)) {
             setTimeout(function() {
-                noLoop();
+                // noLoop();
             }, 5);
             setTimeout(function() {
-                location.reload();
-                loop();
+                // location.reload();
+                // loop();
             }, 1000);
         }
     }
