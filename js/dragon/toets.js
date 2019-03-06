@@ -1,7 +1,7 @@
 function Toets() {
     this.width = 135;
     this.height = 141;
-    this.x = width-200;
+    this.x = width+250;
     this.y = height-this.height;
     this.speed = 10;
 
