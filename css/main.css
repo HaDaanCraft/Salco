@@ -115,6 +115,43 @@ a {
     margin-top: 150px;
   }
 
+  /* Login */
+  .loginFile {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .loginWrapper {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .loginWrapper h3 {
+    margin-top: 20vh;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+
+  .loginWrapper #pin,
+  .loginWrapper #button,
+  .loginWrapper #nr {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .loginWrapper #button {
+    margin-top: 10px;
+    background-color: Transparent;
+  }
+
   /* Klastitularis */
 
   .klastitularis {
@@ -308,6 +345,7 @@ a {
     margin-top: 100px;
     border-radius: 50%;
     height: 500px;
+    width: 100%;
   }
 
   .game h4 {
@@ -437,6 +475,43 @@ a {
 
   .gamess {
     margin-top: 150px;
+  }
+
+  /* Login */
+  .loginFile {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .loginWrapper {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .loginWrapper h3 {
+    margin-top: 20vh;
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+
+  .loginWrapper #pin,
+  .loginWrapper #button,
+  .loginWrapper #nr {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  .loginWrapper #button {
+    margin-top: 10px;
+    background-color: Transparent;
   }
 
   /* Klastitularis */
@@ -640,6 +715,7 @@ a {
     margin-top: 100px;
     border-radius: 50%;
     height: 500px;
+    width: 100%;
   }
 
   .game h4 {
@@ -769,6 +845,43 @@ a {
 
   .gamess {
     margin-top: 150px;
+  }
+
+  /* Login */
+  .loginFile {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .loginWrapper {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .loginWrapper h3 {
+    margin-top: 20vh;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+
+  .loginWrapper #pin,
+  .loginWrapper #button,
+  .loginWrapper #nr {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .loginWrapper #button {
+    margin-top: 10px;
+    background-color: Transparent;
   }
 
   /* Klastitularis */
@@ -976,6 +1089,7 @@ a {
     margin-top: 100px;
     border-radius: 50%;
     height: 500px;
+    width: 100%;
   }
 
   .game h4 {
@@ -1149,6 +1263,43 @@ a {
     margin-top: 150px;
   }
 
+  /* Login */
+  .loginFile {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .loginWrapper {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .loginWrapper h3 {
+    margin-top: 20vh;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .loginWrapper #pin,
+  .loginWrapper #button,
+  .loginWrapper #nr {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .loginWrapper #button {
+    margin-top: 10px;
+    background-color: Transparent;
+  }
+
   /* Klastitularis */
 
   .klastitularis {
@@ -1350,6 +1501,7 @@ a {
     margin-top: 100px;
     border-radius: 50%;
     height: 500px;
+    width: 100%;
   }
 
   .game h4 {
@@ -1523,6 +1675,43 @@ a {
     margin-top: 150px;
   }
 
+  /* Login */
+  .loginFile {
+    background-image: url(../assets/pictures/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .loginWrapper {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .loginWrapper h3 {
+    margin-top: 20vh;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .loginWrapper #pin,
+  .loginWrapper #button,
+  .loginWrapper #nr {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .loginWrapper #button {
+    margin-top: 10px;
+    background-color: Transparent;
+  }
+
   /* Klastitularis */
 
   .klastitularis {
@@ -1724,6 +1913,7 @@ a {
     margin-top: 100px;
     border-radius: 50%;
     height: 500px;
+    width: 100%;
   }
 
   .game h4 {
