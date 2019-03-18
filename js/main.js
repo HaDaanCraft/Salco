@@ -21,6 +21,14 @@ $(document).ready(() => {
     }
   }
 
+  var loggedUserCookie = Cookies.get('user');
+  if (loggedUserCookie == null && $(location).attr('pathname') != '/salco/login.php') {
+    localStorage.link = $(location).attr('pathname');
+    $(location).attr('href', 'login.php');
+  } else if (loggedUserCookie != null && $(location).attr('pathname') == '/salco/login.php') {
+    $(location).attr('href', localStorage.link);
+  }
+
   setTimeout(function () {
 
 
