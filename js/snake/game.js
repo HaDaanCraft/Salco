@@ -34,10 +34,6 @@ function keyPressed() {
     }
 }
 
-function mousePressed() {
-    snake.grow();
-}
-
 function draw() {
     scale(rez);
 
