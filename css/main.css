@@ -70,7 +70,8 @@ a {
 
   #homepage,
   #storys,
-  #games {
+  #games,
+  #profile {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
@@ -432,7 +433,8 @@ a {
 
   #homepage,
   #storys,
-  #games {
+  #games,
+  #profile {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
@@ -802,7 +804,8 @@ a {
 
   #homepage,
   #storys,
-  #games {
+  #games,
+  #profile {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
@@ -1172,7 +1175,8 @@ a {
 
   .right #homepage,
   .right #storys,
-  .right #games {
+  .right #games,
+  .right #profile {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
@@ -1584,7 +1588,8 @@ a {
 
   .right #homepage,
   .right #storys,
-  .right #games {
+  .right #games,
+  .right #profile {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
