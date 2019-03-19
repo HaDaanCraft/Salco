@@ -6,11 +6,12 @@ if (isset($_POST['login'])) {
     $nr = $_POST['nr'];
 
     if (DB::query('SELECT * FROM users WHERE volgnummer=:nr', array(':nr' => $nr))) {
-        $volgnummer = DB::query('SELECT volgnummer FROM users WHERE passcode=:pin AND volgnummer=:nr', array(':pin' => $pin, ':nr' => $nr))[0]['volgnummer'];
-        echo '<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>';
-        echo '<script type="text/javascript">',
-            'Cookies.set("user", "' . $volgnummer . '", { expires: 1 });',
-            '</script>';
+        if (password_verify($pin, DB::query('SELECT passcode FROM users WHERE volgnummer=:volgnummer', array(':volgnummer' => $nr))[0]['passcode'])) {
+            echo '<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>';
+            echo '<script type="text/javascript">',
+                'Cookies.set("user", "' . $nr . '", { expires: 1 });',
+                '</script>';
+        }
     }
 }
 ?>

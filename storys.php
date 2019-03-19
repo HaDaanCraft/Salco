@@ -34,15 +34,25 @@ $profiles = DB::query('SELECT * FROM profiles');
             <div class="storysGrid">
                 <?php
                 foreach ($profiles as $profile) {
-                    echo '<div class="profile"><a href="storyview.php?id=' . $profile['id'] . '">';
-                    echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
-                    echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
-                    echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
-                    echo '</a></div>';
+                    $allowed = unserialize($profile['viewedBy']);
+                    $nr = $_COOKIE['user'];
+                    if (in_array($nr, $allowed)) {
+                        echo '<div class="profile"><a href="storyview.php?storyOf=' . $profile['storyOf'] . '">';
+                        echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
+                        echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
+                        echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
+                        echo '</a></div>';
+                    } else {
+                        echo '<div class="profile"><a href="storys.php">';
+                        echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
+                        echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
+                        echo '<p class="achternaam">' . $profile['Achternaam'] . '</p>';
+                        echo '</a></div>';
+                    }
                 }
                 ?>
             </div>
-        </div>
+         </div>
     </div>
 
 </body>

@@ -94,6 +94,7 @@ $(document).ready(() => {
         $('.nav').addClass('sticky');
         $('.storys').addClass('storyss');
         $('.games').addClass('gamess');
+        $('.profile').addClass('profiless');
         $('.headerWrapper h1').addClass('heads');
         $('.headerWrapper h1').css({
           'margin-top': '100px'
@@ -102,6 +103,7 @@ $(document).ready(() => {
         $('.nav').removeClass('sticky');
         $('.storys').removeClass('storyss');
         $('.games').removeClass('gamess');
+        $('.profile').removeClass('profiless');
         $('.headerWrapper h1').removeClass('heads');
         $('.headerWrapper h1').css({
           'margin-top': ''

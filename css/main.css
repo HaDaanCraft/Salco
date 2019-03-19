@@ -383,6 +383,56 @@ a {
     border-color: buttonface;
     border-image: initial;
   }
+
+  /* Profile */
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .profileWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .profileWrapper input {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+  }
+
+  .profileWrapper #submit {
+    border-style: outset;
+    border-color: buttonface;
+  }
+
+  .profileEdit h6 {
+    color: red;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+
+  .profileWrapper h5 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .profileEditForm {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-gap: 5%;
+  }
+
 }
 
 /* iPads */
@@ -753,6 +803,55 @@ a {
     border-style: outset;
     border-color: buttonface;
     border-image: initial;
+  }
+
+  /* Profile */
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .profileWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .profileWrapper input {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+  }
+
+  .profileWrapper #submit {
+    border-style: outset;
+    border-color: buttonface;
+  }
+
+  .profileEdit h6 {
+    color: red;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+
+  .profileWrapper h5 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .profileEditForm {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-gap: 5%;
   }
 }
 
@@ -1128,6 +1227,55 @@ a {
     border-style: outset;
     border-color: buttonface;
     border-image: initial;
+  }
+
+  /* Profile */
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .profileWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .profileWrapper input {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+  }
+
+  .profileWrapper #submit {
+    border-style: outset;
+    border-color: buttonface;
+  }
+
+  .profileEdit h6 {
+    color: red;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+
+  .profileWrapper h5 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .profileEditForm {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-gap: 5%;
   }
 }
 
@@ -1542,6 +1690,51 @@ a {
     border-color: buttonface;
     border-image: initial;
   }
+
+  /* Profile */
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .profileWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .profileWrapper input {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+  }
+
+  .profileWrapper #submit {
+    border-style: outset;
+    border-color: buttonface;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .profileEdit h6 {
+    color: red;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+
+  .profileWrapper h5 {
+    display: block;
+    margin-right: 10px;
+  }
 }
 
 /* Phone Landscape */
@@ -1677,6 +1870,10 @@ a {
   }
 
   .gamess {
+    margin-top: 150px;
+  }
+
+  .profiless {
     margin-top: 150px;
   }
 
@@ -1955,4 +2152,54 @@ a {
     border-color: buttonface;
     border-image: initial;
   }
+
+  /* Profile */
+
+  .profile {
+    width: 100%;
+  }
+
+  .profileWrapper {
+    width: 85%;
+    padding-top: 25px;
+    margin: auto;
+    padding-bottom: 75px;
+  }
+
+  .profileWrapper h3 {
+    font-size: 40px;
+    color: #4A4A4A;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .profileWrapper input {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+  }
+
+  .profileWrapper #submit {
+    border-style: outset;
+    border-color: buttonface;
+  }
+
+  .profileEdit h6 {
+    color: red;
+    font-weight: bold;
+    margin-top: 75px;
+  }
+
+  .profileWrapper h5 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .profileEditForm {
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-gap: 5%;
+  }
+  
 }

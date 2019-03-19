@@ -1,8 +1,20 @@
 <?php
 include('private/DB.php');
 
-$id = $_GET['id'];
-$story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0];
+$storyOf = $_GET['storyOf'];
+$story = DB::query('SELECT * FROM profiles WHERE storyOf=:storyOf', array(':storyOf' => $storyOf))[0];
+
+$user = $_COOKIE['user'];
+$alloweds = unserialize($story['viewedBy']);
+$profiles = DB::query('SELECT * FROM users');
+
+if (isset($_POST['submit'])) {
+    if (isset($_POST[3])) {
+        echo 'checked';
+    } else {
+        echo 'not checked';
+    }
+}
 
 ?>
 
@@ -43,6 +55,23 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0
                     <?php echo $story['story']; ?>
                 </div>
             </div>
+            <?php
+            if ($user == $storyOf) {
+                echo '<h5>Wie mag deze story zien?</h5>';
+                echo '<form action="storyview.php?storyOf=' . $storyOf . '" method="POST">';
+                echo '<div class="checkboxes">';
+                foreach ($profiles as $profile) {
+                    if (in_array($profile['volgnummer'], $alloweds)) {
+                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" checked/>' . $profile['firstname'] . ' ' . $profile['lastname'] . '<br />';
+                    } else {
+                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" />' . $profile['firstname'] . ' ' . $profile['lastname'] . '<br />';
+                    }
+                }
+                echo '</div>';
+                echo '<input type="submit" name="submit" value="Update Privacy" id="submit">';
+                echo '</form>';
+            }
+            ?>
             <p class="dank">Met dank aan Jules Smedts, Margot Vanderhulst en Kato Verdoodt voor het mogen gebruiken van
                 de Wattpad verhalen!</p>
         </div>
@@ -50,4 +79,4 @@ $story = DB::query('SELECT * FROM profiles WHERE id=:id', array(':id' => $id))[0
 
 </body>
 
-</html>
+</html> 
