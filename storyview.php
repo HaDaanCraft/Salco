@@ -8,12 +8,18 @@ $user = $_COOKIE['user'];
 $alloweds = unserialize($story['viewedBy']);
 $profiles = DB::query('SELECT * FROM users');
 
+// $newalloweds = array();
+
 if (isset($_POST['submit'])) {
-    if (isset($_POST[3])) {
-        echo 'checked';
-    } else {
-        echo 'not checked';
+    $alloweds = array();
+    for ($i = 1; $i <= 19; $i++) {
+        if (isset($_POST[$i])) {
+            array_push($alloweds, $i);
+        }
     }
+
+    $newalloweds = serialize($alloweds);
+    DB::query('UPDATE profiles SET viewedBy=:viewedBy WHERE storyOf=:storyOf', array(':viewedBy' => $newalloweds, ':storyOf' => $storyOf));
 }
 
 ?>
@@ -62,9 +68,9 @@ if (isset($_POST['submit'])) {
                 echo '<div class="checkboxes">';
                 foreach ($profiles as $profile) {
                     if (in_array($profile['volgnummer'], $alloweds)) {
-                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" checked/>' . $profile['firstname'] . ' ' . $profile['lastname'] . '<br />';
+                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" checked/><p class="name">' . $profile['firstname'] . ' ' . $profile['lastname'] . '</p><br />';
                     } else {
-                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" />' . $profile['firstname'] . ' ' . $profile['lastname'] . '<br />';
+                        echo '<input type="checkbox" name="' . $profile['volgnummer'] . '" /><p class="name">' . $profile['firstname'] . ' ' . $profile['lastname'] . '</p><br />';
                     }
                 }
                 echo '</div>';

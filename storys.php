@@ -2,6 +2,7 @@
 include('private/DB.php');
 
 $profiles = DB::query('SELECT * FROM profiles');
+$nr = $_COOKIE['user'];
 
 ?>
 
@@ -35,8 +36,7 @@ $profiles = DB::query('SELECT * FROM profiles');
                 <?php
                 foreach ($profiles as $profile) {
                     $allowed = unserialize($profile['viewedBy']);
-                    $nr = $_COOKIE['user'];
-                    if (in_array($nr, $allowed)) {
+                    if (in_array($nr, $allowed) || $nr == $profile['storyOf']) {
                         echo '<div class="profile"><a href="storyview.php?storyOf=' . $profile['storyOf'] . '">';
                         echo '<div class="photo"><img src="' . $profile['img'] . '" /></div>';
                         echo '<p class="voornaam">' . $profile['Voornaam'] . '</p>';
@@ -52,9 +52,9 @@ $profiles = DB::query('SELECT * FROM profiles');
                 }
                 ?>
             </div>
-         </div>
+        </div>
     </div>
 
 </body>
 
-</html>
+</html> 
