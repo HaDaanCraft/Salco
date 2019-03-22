@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 
     <div class="profile">
         <div class="profileWrapper">
-            <h3>Mijn Profiel -
+            <h3 class="animated fadeIn">Mijn Profiel -
                 <?php echo $profile['firstname'] . " " . $profile['lastname']; ?>
             </h3>
             <div class="profileEdit">

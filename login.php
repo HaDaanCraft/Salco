@@ -41,7 +41,7 @@ if (isset($_POST['login'])) {
 
     <div class="login">
         <div class="loginWrapper">
-            <h3>Login</h3>
+            <h3 class="animated fadeIn">Login</h3>
             <form action="login.php" method="post">
                 <input type="text" name="nr" placeholder="Volgnummer..." id="nr">
                 <br />

@@ -95,6 +95,7 @@ $(document).ready(() => {
         $('.storys').addClass('storyss');
         $('.games').addClass('gamess');
         $('.profile').addClass('profiless');
+        $('.klasgenoten').addClass('classmatess');
         $('.headerWrapper h1').addClass('heads');
         $('.headerWrapper h1').css({
           'margin-top': '100px'
@@ -104,6 +105,7 @@ $(document).ready(() => {
         $('.storys').removeClass('storyss');
         $('.games').removeClass('gamess');
         $('.profile').removeClass('profiless');
+        $('.klasgenoten').removeClass('classmatess');
         $('.headerWrapper h1').removeClass('heads');
         $('.headerWrapper h1').css({
           'margin-top': ''
