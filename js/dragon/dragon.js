@@ -6,7 +6,7 @@ function Dragon() {
 
   this.width = 300;
   this.height = 225;
-  this.imagesrc = "/salco/assets/pictures/games/RonyGame.png";
+  this.imagesrc = "/salco4b/assets/pictures/games/RonyGame.png";
   this.x = 10;
   this.y = 540;
 

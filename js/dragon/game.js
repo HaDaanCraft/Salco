@@ -18,11 +18,11 @@ function setup() {
   dragon = new Dragon();
   toetsen.push(new Toets());
   score = new Score();
-  dragonImg = loadImage("/salco/assets/pictures/games/Dragon/RonyGame.png");
-  dragonImgDown = loadImage("/salco/assets/pictures/games/Dragon/RonyGameDown.png");
-  toetsImg = loadImage("/salco/assets/pictures/games/Dragon/cactus.jpg");
-  bierImg = loadImage("/salco/assets/pictures/games/Dragon/bird.png");
-  bgImage = loadImage("/salco/assets/pictures/games/Dragon/background.jpg");
+  dragonImg = loadImage("/salco4b/assets/pictures/games/Dragon/RonyGame.png");
+  dragonImgDown = loadImage("/salco4b/assets/pictures/games/Dragon/RonyGameDown.png");
+  toetsImg = loadImage("/salco4b/assets/pictures/games/Dragon/cactus.jpg");
+  bierImg = loadImage("/salco4b/assets/pictures/games/Dragon/bird.png");
+  bgImage = loadImage("/salco4b/assets/pictures/games/Dragon/background.jpg");
   textFont(font);
   backgroundMusic.setVolume(0.05);
   backgroundMusic.play();
@@ -85,7 +85,7 @@ function gameOverFunction() {
   score.show(10);
   GameOver.setVolume(0.1);
   GameOver.play();
-  hypeGif = createImg("/salco/assets/pictures/games/Dragon/hype.gif");
+  hypeGif = createImg("/salco4b/assets/pictures/games/Dragon/hype.gif");
   hypeGif.position(width / 2 - 125, height - 150);
   $('.replaybutton').css({
     'display': 'block'

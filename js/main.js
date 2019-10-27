@@ -2,14 +2,14 @@ $(document).ready(() => {
 
   // Navigation bar
 
-  $('#header').load('/salco/files/header.html');
-  $('#nav').load('/salco/files/nav.html');
-  $('#navResponsive').load('/salco/files/navresponsive.html')
+  $('#header').load('/salco4b/files/header.html');
+  $('#nav').load('/salco4b/files/nav.html');
+  $('#navResponsive').load('/salco4b/files/navresponsive.html')
 
   // LoggedIn Checking
 
   var loggedCookie = Cookies.get('loggedInUserType');
-  if (loggedCookie == null && $(location).attr('pathname') == '/salco/games/blokken.html') {
+  if (loggedCookie == null && $(location).attr('pathname') == '/salco4b/games/blokken.html') {
     var pin = prompt("WIP: Pin?");
     if (pin == "8973") {
       Cookies.set('loggedInUserType', '1', {
@@ -17,15 +17,15 @@ $(document).ready(() => {
       });
     } else {
       alert("Wrong Code!");
-      $(location).attr("href", "/salco/games.html");
+      $(location).attr("href", "/salco4b/games.html");
     }
   }
 
   var loggedUserCookie = Cookies.get('user');
-  if (loggedUserCookie == null && $(location).attr('pathname') != '/salco/login.php') {
+  if (loggedUserCookie == null && $(location).attr('pathname') != '/salco4b/login.php') {
     localStorage.link = $(location).attr('pathname');
     $(location).attr('href', 'login.php');
-  } else if (loggedUserCookie != null && $(location).attr('pathname') == '/salco/login.php') {
+  } else if (loggedUserCookie != null && $(location).attr('pathname') == '/salco4b/login.php') {
     $(location).attr('href', localStorage.link);
   }
 

@@ -10,7 +10,7 @@ function setup() {
     bird = new Bird();
     pipes.push(new Pipe());
     score = new Score();
-    birdImage = loadImage("/salco/assets/pictures/games/FlappyBird/ronyhead.png");
+    birdImage = loadImage("/salco4b/assets/pictures/games/FlappyBird/ronyhead.png");
 }
 
 function draw() {
